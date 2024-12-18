@@ -6,12 +6,12 @@ header("Access-Control-Allow-Methods: GET, POST");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-require '../config/cnxpdo_countries.php'; // Conexión a la base de datos
+require '../config/cnxpdo_countries.php'; 
 
 $method = $_SERVER['REQUEST_METHOD'];
-$resource = $_GET['resource'] ?? null;  // Cambiado para usar el parámetro 'resource'
+$resource = $_GET['resource'] ?? null;  
 
-// Mostrar todos los errores
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
